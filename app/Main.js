@@ -7,7 +7,7 @@ var isNode = typeof module !== 'undefined' && module.exports;
 
 const presets = {
   noWobble: {stiffness: 170, damping: 26}, // the default, if nothing provided
-  gentle: {stiffness: 120, damping: 14},
+  mySpring: {stiffness: 120, damping: 14},
   wobbly: {stiffness: 180, damping: 12},
   stiff: {stiffness: 210, damping: 20},
 };
@@ -55,7 +55,7 @@ const MyMenu = React.createClass({
                 let ycode = x * Math.sin(angle/180*Math.PI);
                 return (
                   <div key={i} className="myItem" onClick={this.itemClick.bind(null, item)} style={{
-                    zIndex: 1,
+                    zIndex: 9,
                     color: 'white',
                     textAlign: 'center',
                     lineHeight: 1.6,
@@ -98,9 +98,9 @@ const VideoList = React.createClass({
         key: video.key,
         data: video.data,
         style: {
-          height: spring(115, presets.gentle),
-          opacity: spring(1, presets.gentle),
-          marginTop: spring(10, presets.gentle),
+          height: spring(115, presets.mySpring),
+          opacity: spring(1, presets.mySpring),
+          marginTop: 10,
         }
       };
     });
@@ -110,7 +110,7 @@ const VideoList = React.createClass({
     return {
       height: 0,
       opacity: 0,
-      marginTop: 0
+      marginTop: 10
     };
   },
 
@@ -118,7 +118,7 @@ const VideoList = React.createClass({
     return {
       height: 0,
       opacity: 0,
-      marginTop: 0,
+      marginTop: 10,
     };
   },
   render() {

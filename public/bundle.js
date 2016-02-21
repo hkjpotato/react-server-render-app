@@ -57,7 +57,7 @@
 
 	var presets = {
 	  noWobble: { stiffness: 170, damping: 26 }, // the default, if nothing provided
-	  gentle: { stiffness: 120, damping: 14 },
+	  mySpring: { stiffness: 120, damping: 14 },
 	  wobbly: { stiffness: 180, damping: 12 },
 	  stiff: { stiffness: 210, damping: 20 }
 	};
@@ -117,7 +117,7 @@
 	                return React.createElement(
 	                  'div',
 	                  { key: i, className: 'myItem', onClick: _this.itemClick.bind(null, item), style: {
-	                      zIndex: 1,
+	                      zIndex: 9,
 	                      color: 'white',
 	                      textAlign: 'center',
 	                      lineHeight: 1.6,
@@ -168,9 +168,9 @@
 	        key: video.key,
 	        data: video.data,
 	        style: {
-	          height: (0, _reactMotion.spring)(115, presets.gentle),
-	          opacity: (0, _reactMotion.spring)(1, presets.gentle),
-	          marginTop: (0, _reactMotion.spring)(10, presets.gentle)
+	          height: (0, _reactMotion.spring)(115, presets.mySpring),
+	          opacity: (0, _reactMotion.spring)(1, presets.mySpring),
+	          marginTop: 10
 	        }
 	      };
 	    });
@@ -179,14 +179,14 @@
 	    return {
 	      height: 0,
 	      opacity: 0,
-	      marginTop: 0
+	      marginTop: 10
 	    };
 	  },
 	  willLeave: function willLeave() {
 	    return {
 	      height: 0,
 	      opacity: 0,
-	      marginTop: 0
+	      marginTop: 10
 	    };
 	  },
 	  render: function render() {
