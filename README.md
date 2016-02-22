@@ -1,5 +1,7 @@
 # React Server Render APP
 
+[livedemo]
+
 I receive this project as a design task. Through this project, I learn two important things:
  - Make the UI in the way of ReactJS
  - Server side rendering vs Client side rendering
@@ -14,7 +16,7 @@ Simple playlist of finite set of videos
 
 ### Run the App
 
-You need Node installed globally:
+You need Node installed globally, then simply run the following command. Then go to http://localhost:3000
 
 ```sh
 $ node server.js
@@ -66,7 +68,7 @@ For additional material, I highly suggest the following two articles about React
    [React]: <https://www.npmjs.com/package/react>
    [react-motion]: <https://www.npmjs.com/package/react-motion>
    [jQuery]: <http://jquery.com>
-
+   [livedemo]: <http://52.24.114.125:3000/>
    
    [Isomorphic JavaScript]: <http://reactjsnews.com/isomorphic-javascript-with-react-node/>
    [How to build React apps that load quickly using server side rendering]:  <https://www.terlici.com/2015/03/18/fast-react-loading-server-rendering.html>
