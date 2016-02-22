@@ -122,7 +122,7 @@ options.map(function(option, index) {
 Important: 
 React will check that any initial markup present matches what's produced for the first render on the client 
 by comparing checksums between the initial client render and a checksum attribute in the server-rendered markup, 
-so you must make the same props available for the initial render on the client in order to reuse the markup.
+so I must make the same props available for the initial render on the client in order to reuse the markup.
 */
 
 
