@@ -2,7 +2,7 @@
 
 [live demo]
 
-I receive this project as a design task. Through this project, I learn two important things:
+A design task. Through this project, I learn two important things:
  - Make the UI in the way of ReactJS
  - Server side rendering vs Client side rendering
 
@@ -34,7 +34,7 @@ The design process is an trial and error. The final design is
  - 1. The state of the app is controlled by the root app, including: 1. selected artist; 2. menu options; 3. videolist data
  - 2. The menu only maintains a private state: open or not. It has a callback function received as a prop from the root app. Once there is a change in the selected artist, it will trigger the callback of the root app to update the state as a whole.
  - 3. The list element is designed to be a pure stateless UI. It only in charge of rendering the data received as props.
- - 4. As a result, everything is resuable, composable and completed React.
+ - 4. As a result, everything is resuable, composable and completely "React".
 
 Below is the draft I made when designing the app
 ![Design Draft](https://raw.githubusercontent.com/hkjpotato/react-server-render-app/master/draft.jpg)
