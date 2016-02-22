@@ -35,7 +35,7 @@ The design process is an trial and error. The final design is
  - 4. As a result, everything is resuable, composable and completed React.
 
 Below is the draft I made when designing the app
-![Design Draft](https://raw.githubusercontent.com/hkjpotato/react-server-render-app/draft.jpg)
+![Design Draft](https://raw.githubusercontent.com/hkjpotato/react-server-render-app/master/draft.jpg)
 
 ## Server side rendering and client side rendering
 The basic idea is that React will not re-render the same mark up with the same props on the client side. This is done by comparing checksums between the initial client render and a checksum attribute in the server-rendered markup. To do so:
