@@ -21353,15 +21353,6 @@
 	  return MyToggle;
 	}(_react2.default.Component);
 
-	// MeMenu.propTypes = {
-	//   checked: React.PropTypes.bool
-	// }
-
-	// MeMenu.defaultProps = {
-	//   checked : false
-	// }
-
-
 	exports.default = MyToggle;
 
 /***/ },
