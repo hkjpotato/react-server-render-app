@@ -11,7 +11,6 @@ Simple playlist of finite set of videos
  - A dropdown to choose from different artists.
  - By default the first item in the dropdown should be selected and the corresponding playlist should be rendered server side. Change in selection should trigger client side updates.
  - Design/ Presentation of the module is entirely up to you. 
-# Design Draft in React
 
 ### Run the App
 
@@ -35,7 +34,7 @@ The design process is an trial and error. The final design is
  - 3. The list element is designed to be a pure stateless UI. It only in charge of rendering the data received as props.
  - 4. As a result, everything is resuable, composable and completed React.
 
-![Design Draft](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Design Draft](https://raw.githubusercontent.com/hkjpotato/react-server-render-app/design.jpg)
 
 ## Server side rendering and client side rendering
 The basic idea is that React will not re-render the same mark up with the same props on the client side. This is done by comparing checksums between the initial client render and a checksum attribute in the server-rendered markup. To do so:
