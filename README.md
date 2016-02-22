@@ -4,7 +4,7 @@ I receive this project as a design task. Through this project, I learn two impor
  - Make the UI in the way of ReactJS
  - Server side rendering vs Client side rendering
 
-# Basic product requirements 
+## Basic product requirements 
 Create a node.js application consisting of a single playlist module with YouTube’s public search API: https://developers.google.com/youtube/v3/docs/search
 
 Simple playlist of finite set of videos 
@@ -28,7 +28,7 @@ I use webpack to configure the client side bundle. You can modified the Main.js 
 $ webpack -w
 ```
 
-# Design Analysis
+## Design Analysis
 The design process is an trial and error. The final design is 
  - 1. The state of the app is controlled by the root app, including: 1. selected artist; 2. menu options; 3. videolist data
  - 2. The menu only maintains a private state: open or not. It has a callback function received as a prop from the root app. Once there is a change in the selected artist, it will trigger the callback of the root app to update the state as a whole.
@@ -37,7 +37,7 @@ The design process is an trial and error. The final design is
 
 ![Design Draft](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
-# Server side rendering and client side rendering
+## Server side rendering and client side rendering
 The basic idea is that React will not re-render the same mark up with the same props on the client side. This is done by comparing checksums between the initial client render and a checksum attribute in the server-rendered markup. To do so:
 
  - 1. Use React.createFactory to create the mark up in the server side. And then use ReactDOMServer.renderToString to render it to html.
@@ -46,7 +46,7 @@ The basic idea is that React will not re-render the same mark up with the same p
 For additional material, I highly suggest the following two articles about React server side rendering
  - [Isomorphic JavaScript]
  - [How to build React apps that load quickly using server side rendering]
- - 
+
 ### Node Modules 
 * [Express] - Express is used to set up a simple RESTful node server.
 * [Request] - Request is used to make http calls from the server side. Server side http call is make for the initial server rendering so as to load the initial data (props) for the React UI elements.
