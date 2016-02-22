@@ -69,12 +69,3 @@ export default class MyToggle extends React.Component {
     );
   }
 }
-
-
-// MeMenu.propTypes = {
-//   checked: React.PropTypes.bool
-// }
-
-// MeMenu.defaultProps = {
-//   checked : false
-// }
