@@ -68,7 +68,7 @@ For additional material, I highly suggest the following two articles about React
    [React]: <https://www.npmjs.com/package/react>
    [react-motion]: <https://www.npmjs.com/package/react-motion>
    [jQuery]: <http://jquery.com>
-   [Live Demo]: <http://52.24.114.125:3000/>
+   [Live Demo]: <http://35.164.184.64:3000/:3000/>
    
    [Isomorphic JavaScript]: <http://reactjsnews.com/isomorphic-javascript-with-react-node/>
    [How to build React apps that load quickly using server side rendering]:  <https://www.terlici.com/2015/03/18/fast-react-loading-server-rendering.html>
